@@ -3,7 +3,7 @@
  * 如果未开启mongoDB，则无需任何改变，可以运行一个nodejs的“hello world”小程序。
  * 如果开启了mongoDB，则去config.js文件按指引操作，可以运行获得一个通过mongoskin模块连接的nodejs+mongodb测试小程序。
  ***/
-var http = require('http'),
+var http = require('http'),ss
     db = require('./config').db;
 http.createServer(function(req, res){
     res.writeHead(200, {"content-type":"text/html;charset=utf8"});
@@ -42,4 +42,3 @@ function testMongoDB(res){
       }
    });
 }
-
